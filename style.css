@@ -1,0 +1,217 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-size:16px;
+}
+
+body {
+	font-family: 'Manrope';
+}
+
+header {
+	background-color: rgba(255,255,255,0.95);
+	
+}
+
+
+header, footer {
+	text-align: center;
+}
+
+h1,h2,h3,p,li{
+  font-family: "Manrope";
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+	text-align: center;
+	font-size: 60px;
+	color: black;
+	padding-bottom: 30px;
+}
+li {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+h1,h2,p,li {
+	padding-bottom: 25px
+}
+.item {
+	background-color: lightgray;
+	padding: 1%;
+	margin: 1%;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+/* lets bring the width in a little */
+/* check it out - we're responsive without even trying! */
+main {
+/* Theres rarely any time yo should set an explicit width. Always use max-width wherever possible. */
+	max-width: 1000px;
+	/* change the above to width: 1000px and see what happens with responsive*/
+	margin-left: auto;
+	margin-right: auto;
+}
+/* lets talk about nesting*/
+.item li {
+	margin-left: 25px;
+}
+blockquote {
+	text-transform: uppercase;
+	font-style: italic;
+}
+nav {
+	padding: 10px;
+	text-align: left;
+}
+nav li {
+	display: inline-block;
+}
+/* nav li a, or nav a ?? */ nav a {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: dimgray;
+	border-radius: 3px;
+}
+
+body {
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* media query - responsive*/
+@media screen and (min-width: 500px) {
+	body {
+		background-color: #7903B6;
+		font-family: arial;
+	}
+	.item {
+		background-color: rgba(246,246,246,0.90);
+	}
+	h2{
+		font-family: 'Manrope';
+	}
+}
+@media screen and (min-width: 768px){
+	body {
+		background-color: black;
+		background-image: url(Cookingbackground.jpg);
+		background-repeat:repeat;
+		background-size: 300px 300px;
+		z-index: -1;
+	}
+.item {
+
+	
+background-color: rgba(255,255,255,0.95);
+}
+	footer {
+		color: white;
+		clear: both;
+	}
+}
+input[type=text], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-sizing: border-box
+}
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+div {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+img {
+	padding: 10px;
+}
+
+.imgsize {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+.imgsize2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+
+}
+
+.fa {
+	font-size: 40px
+}
+
+.checked {
+  color: orange;
+}
+
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  coolor: black;
+  transition: color 0.1s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 40px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: orange;
+  transition: color 0.3s;
+}
+
+.rating {
+background-color: rgba(255,255,255,0);
+}
+.submit {
+	font-size: 23px;
+	font-weight: 700;	
+	background-color: rgba(171,171,171,0.25);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin: 10px;
+	border-width: 0px;
+	border-color: black;
+	border-radius: 5px;	
+	cursor: pointer;
+}
